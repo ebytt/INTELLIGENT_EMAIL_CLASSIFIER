@@ -9,46 +9,46 @@ Interactive Web App = Built wit streamlit for a clean and responsive interface.
 Model Persistence = Uses joblib library to save and load the trained mdel efficiently.  
 Deployment = Deploy on Streamlit Cloud for global access.  
 
-**Tech Stack**
-Python
-Streamlit
-Scikit-learn
-NLTK
-Pandas 
-Numpy
+**Tech Stack**  
+Python  
+Streamlit  
+Scikit-learn  
+NLTK  
+Pandas   
+Numpy  
+  
+**Installation & Setup Guide**  
 
-**Installation & Setup Guide**
-
-Clone this repository
+Clone this repository  
 
 "git clone https://github.com/ebytt/intelligent_email_classifier.git
-cd spamshield""
+cd spamshield""  
 
 
-Create and activate a virtual environment (recommended)
+Create and activate a virtual environment (recommended)  
 
-python -m venv venv
-source venv/bin/activate   # On Linux/Mac
-venv\Scripts\activate      # On Windows
-
-
-Install dependencies
-
-pip install -r requirements.txt
+python -m venv venv  
+source venv/bin/activate   # On Linux/Mac  
+venv\Scripts\activate      # On Windows  
 
 
-Run the app
+Install dependencies  
 
-streamlit run app.py
+pip install -r requirements.txt  
 
 
-Open the link in your browser (usually http://localhost:8501).
+Run the app  
 
-Project Structure
-📂 Intelligent Email Classifier
- ├── spam_app.py               # Streamlit app script
- ├── cv_model.pkl            # Trained ML model
- ├── requirements.txt     # Dependencies
+streamlit run app.py  
+
+
+Open the link in your browser (usually http://localhost:8501).  
+
+Project Structure  
+📂 Intelligent Email Classifier  
+ ├── spam_app.py               # Streamlit app script  
+ ├── cv_model.pkl            # Trained ML model  
+ ├── requirements.txt     # Dependencies  
  └── README.md            # Project documentation
 
 **Usage Example**
