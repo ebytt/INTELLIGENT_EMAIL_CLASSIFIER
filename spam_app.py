@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-import pickle
+import pickle  as pkl
 import streamlit as st
 
 
@@ -12,10 +12,10 @@ It uses a Logistic Regression model trained on a dataset of emails.""")
 # If You Used a CountVectorizer or TfidfVectorizer Before Training:
 # You must transform the new input using the same vectorizer before passing it to the model.
 with open("Logistic_model.pkl", "rb") as file:
-    loaded_model = pickle.load(file)
+    loaded_model = pkl.load(file)
 
 with open("cv_model.pkl", "rb") as file:
-    vectorizer = pickle.load(file)
+    vectorizer = pkl.load(file)
 
 # Sample input (ensure it's string)
 user_input = str(st.text_area("__Enter email text here__"))
@@ -41,5 +41,6 @@ st.divider()
 # Display the current year in the footer
 
 st.markdown("_Made with ❤️ by Ebunlicious_")
+
 
 
