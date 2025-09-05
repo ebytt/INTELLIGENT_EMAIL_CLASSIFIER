@@ -11,19 +11,25 @@ It uses a Logistic Regression model trained on a dataset of emails.""")
 # -----> load the model and vectorizer
 # If You Used a CountVectorizer or TfidfVectorizer Before Training:
 # You must transform the new input using the same vectorizer before passing it to the model.
-# with open("Logistic_model.pkl", "rb") as file:
-#     loaded_model = pkl.load(file)
+# save model
+with open("Logistic_model.pkl", "wb") as f:
+    pickle.dump(model, f)
 
-# with open("cv_model.pkl", "rb") as file:
-#     vectorizer = pkl.load(file)
+# save vectorizer
+with open("cv_model.pkl", "wb") as f:
+    pickle.dump(vectorizer, f)
+    
+# load model
+with open("Logistic_model.pkl", "rb") as file:
+    loaded_model = pkl.load(file)
 
+# load vectorizer
+with open("cv_model.pkl", "rb") as file:
+    vectorizer = pkl.load(file)
 
 
 # Sample input (ensure it's string)
 user_input = str(st.text_area("__Enter email text here__"))
-
-loaded_model = pickle.load("Logistic_model.pkl")
-vectorizer = pickle.load("cv_model.pkl")
 
 # Transform before prediction
 if st.button("Predict"):
