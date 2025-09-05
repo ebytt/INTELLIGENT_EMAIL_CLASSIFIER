@@ -1,12 +1,13 @@
 **Intelligent Email Classifier** is a simple web application built with streamlit that detects whether a message is spam or not. 
 It uses natural languge processing (NLP) and machine learning techniques to classify text messages in real-time.
 
-**Features**
-Real-time Dectection = Receives any text message and instantly determine the category (spam or not spam)
-ML Powered = It is trained with scikit-learn using TF-IDF vectorization.
-Interactive Web App = Built wit streamlit for a clean and responsive interface.
-Model Persistence = Uses joblib library to save and load the trained mdel efficiently.
-Deployment = Deploy on Streamlit Cloud for global access.
+**Features**  
+
+Real-time Dectection = Receives any text message and instantly determine the category (spam or not spam)  
+ML Powered = It is trained with scikit-learn using TF-IDF vectorization.  
+Interactive Web App = Built wit streamlit for a clean and responsive interface.  
+Model Persistence = Uses joblib library to save and load the trained mdel efficiently.  
+Deployment = Deploy on Streamlit Cloud for global access.  
 
 **Tech Stack**
 Python
