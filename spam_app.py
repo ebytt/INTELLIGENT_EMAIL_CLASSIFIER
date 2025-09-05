@@ -14,11 +14,11 @@ It uses a Logistic Regression model trained on a dataset of emails.""")
 
 # load model
 with open("Logistic_model.pkl", "rb") as file:
-    loaded_model = pkl.load(file)
+    loaded_model = pickle.load(file)
 
 # load vectorizer
 with open("cv_model.pkl", "rb") as file:
-    vectorizer = pkl.load(file)
+    vectorizer = pickle.load(file)
 
 
 # Sample input (ensure it's string)
@@ -45,6 +45,7 @@ st.divider()
 # Display the current year in the footer
 
 st.markdown("_Made with ❤️ by Ebunlicious_")
+
 
 
 
