@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-import joblib
+import pickle as pkl
 import streamlit as st
 
 
@@ -17,8 +17,8 @@ It uses a Logistic Regression model trained on a dataset of emails.""")
 # with open("cv_model.pkl", "rb") as file:
 #     vectorizer = pkl.load(file)
 
-loaded_model = joblib.load("Logistic_model.pkl")
-vectorizer = joblib.load("cv_model.pkl")
+loaded_model = pkl.load("Logistic_model.pkl")
+vectorizer = pkl.load("cv_model.pkl")
 
 # Sample input (ensure it's string)
 user_input = str(st.text_area("__Enter email text here__"))
