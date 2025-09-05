@@ -2,7 +2,6 @@ import numpy as np
 import pandas as pd
 import pickle
 import streamlit as st
-import os
 
 
 st.title("📩Spam Email Classification App")
@@ -12,8 +11,6 @@ It uses a Logistic Regression model trained on a dataset of emails.""")
 # -----> load the model and vectorizer
 # If You Used a CountVectorizer or TfidfVectorizer Before Training:
 # You must transform the new input using the same vectorizer before passing it to the model.
-model = joblib.load(os.path.join("logistic_model.pkl"))
-
 with open("Logistic_model.pkl", "rb") as file:
     loaded_model = pickle.load(file)
 
@@ -44,3 +41,4 @@ st.divider()
 # Display the current year in the footer
 
 st.markdown("_Made with ❤️ by Ebunlicious_")
+
