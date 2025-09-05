@@ -11,14 +11,7 @@ It uses a Logistic Regression model trained on a dataset of emails.""")
 # -----> load the model and vectorizer
 # If You Used a CountVectorizer or TfidfVectorizer Before Training:
 # You must transform the new input using the same vectorizer before passing it to the model.
-# save model
-with open("Logistic_model.pkl", "wb") as f:
-    pickle.dump(model, f)
 
-# save vectorizer
-with open("cv_model.pkl", "wb") as f:
-    pickle.dump(vectorizer, f)
-    
 # load model
 with open("Logistic_model.pkl", "rb") as file:
     loaded_model = pkl.load(file)
@@ -52,6 +45,7 @@ st.divider()
 # Display the current year in the footer
 
 st.markdown("_Made with ❤️ by Ebunlicious_")
+
 
 
 
