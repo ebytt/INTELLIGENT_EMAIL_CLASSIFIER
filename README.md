@@ -46,8 +46,9 @@ Open the link in your browser (usually http://localhost:8501).
 
 Project Structure  
 📂 Intelligent Email Classifier  
- ├── spam_app.py               # Streamlit app script  
- ├── cv_model.pkl            # Trained ML model  
+ ├── spam_app.py          # Streamlit app script  
+ ├── logistic_model.pkl   # Trained ML model  
+ ├── cv_model.pkl         # TD-IDF vectorizer
  ├── requirements.txt     # Dependencies  
  └── README.md            # Project documentation
 
