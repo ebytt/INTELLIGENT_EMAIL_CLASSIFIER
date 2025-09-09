@@ -1,3 +1,6 @@
+Intelligent Email Classifier: Streamlit-based app that detects spam in real time using natural language processing and machine learning.
+Explore the deployed web app here: Intelligent Email Classifier Project
+
 **Intelligent Email Classifier** is a simple web application built with streamlit that detects whether a message is spam or not. 
 It uses natural languge processing (NLP) and machine learning techniques to classify text messages in real-time.
 
